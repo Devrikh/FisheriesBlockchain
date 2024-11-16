@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {FisheriesManagement} from "./FisheriesManagement.sol";
+import {FisheriesManagement} from "./FirsheriesManagement.sol";
 
 contract FishTransfer {
     FisheriesManagement public fisheriesManagement;
