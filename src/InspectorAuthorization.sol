@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.27;
+pragma solidity ^0.8.0;
 
 contract InspectorAuthorization {
     address public government;
@@ -9,10 +9,7 @@ contract InspectorAuthorization {
     event InspectorRevoked(address inspector);
 
     modifier onlyGovernment() {
-        require(
-            msg.sender == government,
-            "Only government can call this function"
-        );
+        require(msg.sender == government, "Only government can call this function");
         _;
     }
 
